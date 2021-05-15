@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Stroll",
+    "description": "Stack Overflow Auto Scroll",
+    "version": "0.0.1",
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.stackoverflow.com/*"
+            ],
+            "js": [
+                "script.js"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ]
+}
